@@ -24,6 +24,9 @@
         h3{
             font-size: 0.7rem;
         }
+        a{
+            font-size: 0.9rem;
+        }
 }
 
 @media screen and (max-width: 1500px) and (min-width: 600px){
@@ -201,7 +204,6 @@ header .redes{
 
 .promocoes .card img{
     width: 20vw;
-    height: fit-content;
     min-width: 150px;
     max-width: 300px;
 }
