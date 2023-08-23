@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor01: #EEE8C8;
+    --cor02: #D6EAFF;
+    --cor03: #83B9F2;
+    --cor04: #2C4259;
+    --cor05: #5E6770;
+    --cor06: rgb(190, 190, 190);  
+}
+
+@media screen and (max-width: 600px) {
+        h1{
+            font-size: 0.9rem;
+        }
+        h2{
+            font-size: 0.8rem;
+        }
+        h3{
+            font-size: 0.7rem;
+        }
+}
+
+@media screen and (max-width: 1500px) and (min-width: 600px){
+    h1{
+        font-size: 0.95rem;
+    }
+    h2{
+        font-size: 0.85rem;
+    }
+    h3{
+        font-size: 0.75rem;
+    }
+}
+
+body{
+    font-family: monospace;
+    font-size: 1rem;
+    width: 100vw;
+}
+
+/* --- HEADER --- */
+header{
+    background-color: var(--cor01);
+    height: 80px;
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 15vw;
+    height: 80px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 50px;
+    padding: 5px;
+    align-items: center;
+}
+
+.menu{
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: var(--cor04);
+    font-weight: bold;
+    margin: 10px;
+}
+
+.menu a:hover{
+    color: var(--cor06);
+    transition: 0.3s;
+}
+
+header .redes{
+    display: flex;
+    width: 15vw;
+    margin-right: 20px;
+    justify-content: center;
+}
+
+.redes img{
+    width: 25px;
+    padding: 10px;
+}
+
+/* --- DESTAQUES ---*/
+.destaques{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--cor04);
+    width: 100vw;
+    height: min-content;
+    justify-content: center;
+    box-shadow: 0px 1px 20px 0px black;
+}
+
+.destaques ul{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 30px;
+}
+
+.destaques a{
+    text-decoration: none;
+    color: var(--cor04);
+}
+
+.destaques .card{
+    background-color: white;
+    width: 30vw;
+    min-width: 350px;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 30px 10px 30px 10px;
+    margin: 20px;
+    box-shadow: 3px 3px 20px 0px black;
+}
+
+.destaques .card:hover{
+    box-shadow: 3px 3px 20px 0px white;
+}
+
+.destaques img{
+    width: 30vw;
+    min-width: 350px;
+    border-radius: 30px 10px 0px 0px;
+}
+
+.destaques .card h1{
+    width: fit-content;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* --- PROMOCOES --- */
+.promocoes{
+    width: 100vw;
+    height: min-content;
+ }
+
+.promocoes ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    margin: 50px auto;
+}
+
+.promocoes a{
+    text-decoration: none;
+    color: var(--cor04);
+}
+
+.promocoes .card{
+    background-color: white;
+    width: 40vw;
+    min-width: 400px;
+    height: min-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    border-color: var(--cor06);
+    border-style: solid; 
+    border-width: 1px;
+    margin: 10px;
+}   
+
+.promocoes .card:hover{
+    box-shadow: 0px 0px 2px 0px black;
+}   
+
+.promocoes .card img{
+    width: 20vw;
+    height: fit-content;
+    min-width: 150px;
+    max-width: 300px;
+}
+
+.promocoes .card h2, h3{
+    width: 20vw;
+    min-width: 210px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+/* --- FOOTER --- */
+.rodape{
+    width: 100vw;
+    background-color: var(--cor01);
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top-style: solid;
+    border-top-color: black;
+    border-top-width: 1px;
+}
+
+.copy{
+    width: 100vw;
+    background-color: var(--cor01);
+    height: 40px;
+    border-top-color: var(--cor06);
+    border-top-style: solid;
+    border-top-width: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape img{
+    width: 45px;
+    height: fit-content;
+    margin: 10px;
+}
+
+.copy h3{
+    width: fit-content;
+}
